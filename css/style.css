@@ -20,6 +20,13 @@ section h2 {
   font-size: 1.75rem;
   color: #151515;
 }
+section h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #151515;
+  margin-bottom: 1rem;
+}
 .menu-heading {
   padding-top: 3rem;
 }
@@ -309,6 +316,89 @@ section h2 {
 
 #contact {
   background: #f0f0f0;
+}
+.info {
+  background: #fff;
+  font-family: 'poppins', sans-serif;
+  font-size: 1rem;
+  padding: 2rem;
+  margin: 1rem 0;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  height: 85vh;
+}
+.info li {
+  list-style: none;
+  margin: 1rem;
+}
+.info span {
+  margin-left: 10px;
+  opacity: 0.7;
+}
+.info p {
+  color: #151515;
+}
+.info i {
+  color: #f5a637;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+.social-media i {
+  color: #151515;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.info i:hover {
+  transform: scale(1.25);
+  opacity: 0.8;
+}
+.form-group {
+  position: relative;
+  margin-bottom: 1.75rem;
+  color: #777777;
+}
+.form-group:first-child {
+  margin-top: 2rem;
+}
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
+  left: 12px;
+  transition: all 0.3s ease-in-out;
+}
+.form-group input,
+.form-group textarea {
+  border: none;
+  border-bottom: 2px solid #151515;
+
+  outline: none;
+}
+.form-group textarea {
+  min-height: 120px;
+}
+.form-group textarea::placeholder {
+  color: #777777;
+}
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+  top: -25px;
+  bottom: 0px;
+  left: 0px;
+  color: #f5a637;
+  font-size: 0.8rem;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  color: #777777;
+  box-shadow: none;
+  border-bottom: 2px solid #151515;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px white inset !important;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 /* End of contact us section */

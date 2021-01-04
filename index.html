@@ -21,6 +21,13 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
     <!-- Animations -->
     <link
       rel="stylesheet"
@@ -495,18 +502,125 @@
     <!-- Contact us section -->
     <section id="contact">
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-12">
             <h2 class="menu-heading text-center">Contact us</h2>
-            <p class="menu-subheading text-center">
-              For reservations within the coming week, or for parties larger
-              than four, please call us at the number listed below. We will call
-              you to confirm your reservation at least 24 hours prior to your
-              reservation.
-            </p>
           </div>
-          <div class="col-md-6">
-            <p>We'd love to hear from you!</p>
+          <div class="col-lg-6">
+            <div class="info">
+              <h5>Let's get in touch</h5>
+              <p>
+                For reservations within the coming week, or for parties larger
+                than four, please call us at the number listed below. We will
+                call you to confirm your reservation at least 24 hours prior to
+                your reservation.
+              </p>
+              <ul class="list-group d-flex flex-column align-items-start">
+                <li>
+                  <i class="fas fa-map-marked-alt fa-lg"></i>
+                  <span>
+                    Kalalarga 32 <br />
+                    Makarska, Croatia <br />
+                    21300
+                  </span>
+                </li>
+                <li>
+                  <i class="fas fa-envelope-open-text fa-lg"></i>
+                  <span>spinabar.makarska@gmail.com</span>
+                </li>
+                <li>
+                  <i class="fas fa-phone-volume fa-lg"></i>
+                  <span>+385 99 759 1111</span>
+                </li>
+                <li>
+                  <i class="fas fa-clock fa-lg"></i>
+                  <span>17:00 pm – 2:00 am</span>
+                </li>
+              </ul>
+              <p class="mt-4">Connect with us:</p>
+              <ul class="list-group d-flex flex-row social-media">
+                <li>
+                  <a href="https://www.facebook.com/spinabar/" target="_blank"
+                    ><i class="fab fa-facebook fa-lg"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/spinabarmakarska/"
+                    target="_blank"
+                    ><i class="fab fa-instagram fa-lg"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.tripadvisor.com/Restaurant_Review-g303814-d10641124-Reviews-Spina_Bar-Makarska_Split_Dalmatia_County_Dalmatia.html"
+                    target="_blank"
+                    ><i class="fab fa-tripadvisor fa-lg"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="info">
+              <h5>Send a Message</h5>
+              <form action="POST" data-netlify="true">
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    required
+                  />
+                  <label class="floating-label">First Name</label>
+                </div>
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    required
+                  />
+                  <label class="floating-label">Last Name</label>
+                </div>
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                  <label class="floating-label">Email</label>
+                </div>
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    required
+                  />
+                  <label class="floating-label">Phone</label>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    id="message"
+                    placeholder="Write your message here..."
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <button class="btn" type="submit" value="send">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- <div class="col-md-6">
             <form>
               <div class="form-group">
                 <label for="email">Email address</label>
@@ -522,7 +636,7 @@
                 >
               </div>
               <div class="form-group">
-                <label for="text">Message</label>
+                <label for="text">Subject</label>
                 <textarea
                   class="form-control"
                   id="text"
@@ -535,13 +649,24 @@
           </div>
           <div class="col-md-6">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Morbi leo risus</li>
-              <li class="list-group-item">Porta ac consectetur ac</li>
-              <li class="list-group-item">Vestibulum at eros</li>
+              <li class="list-group-item">
+                <i class="fas fa-map-marker-alt fa-lg"></i>
+                Kalalarga 32, 21300 Makarska, Croatia
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-phone fa-pulse fa-lg"></i>
+                +385991237654
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-clock fa-spin fa-lg"></i>
+                17:00 pm – 2:00 am
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-envelope fa-lg"></i>
+                spinabar.makarska@gmail.com
+              </li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
