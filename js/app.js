@@ -53,3 +53,7 @@ $(window).scroll(function (e) {
     $('.navbar').removeClass('navbar-hide');
   }
 });
+
+document
+  .querySelector('.jsYear')
+  .appendChild(document.createTextNode(new Date().getFullYear()));

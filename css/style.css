@@ -316,6 +316,8 @@ section h5 {
 
 #contact {
   background: #f0f0f0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .info {
   background: #fff;
@@ -375,13 +377,14 @@ section h5 {
 }
 .form-group textarea {
   min-height: 120px;
+  color: #151515 !important;
 }
 .form-group textarea::placeholder {
   color: #777777;
 }
 input:focus ~ .floating-label,
 input:not(:focus):valid ~ .floating-label {
-  top: -25px;
+  top: -15px;
   bottom: 0px;
   left: 0px;
   color: #f5a637;
@@ -400,8 +403,52 @@ input:-webkit-autofill:active {
   box-shadow: 0 0 0 30px white inset !important;
   -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
-
+iframe {
+  margin-top: 5rem;
+}
 /* End of contact us section */
+
+/* Footer section */
+
+footer {
+  background-color: #151515;
+  color: #777777;
+  padding: 3rem;
+}
+footer h5 {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f5a637;
+}
+footer img {
+  max-height: 170px;
+  margin-top: 2rem;
+}
+footer .copyright,
+.author {
+  margin-top: 4rem;
+}
+footer .copyright::before {
+  display: inline-block;
+  width: 3rem;
+  margin-right: 1rem;
+  content: '';
+  vertical-align: middle;
+  border-top: 1px solid #777;
+}
+.author a {
+  text-decoration: none;
+  color: #f5a637;
+}
+.author a:hover {
+  color: #f0f0f0;
+}
+/* End of footer section */
 
 /* Responsivness */
 
