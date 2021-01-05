@@ -57,6 +57,7 @@ section h5 {
   text-transform: uppercase;
 }
 .preheading .highlight {
+  font-family: 'Lato', sans-serif;
   color: #f5a637;
 }
 .carousel-caption h5 {
@@ -68,6 +69,7 @@ section h5 {
   margin-top: 2rem;
 }
 .carousel-caption p {
+  font-family: 'Lato', sans-serif;
   margin: auto;
   line-height: 2;
   width: 60%;
@@ -536,14 +538,13 @@ footer .copyright::before {
     bottom: 200px;
   }
   .preheading {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   .carousel-caption h5 {
     font-size: 3rem;
     margin-top: 1rem;
   }
   .carousel-caption p {
-    font-size: 0.8rem;
     line-height: 1.5;
     width: 100%;
   }
