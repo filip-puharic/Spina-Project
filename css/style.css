@@ -115,6 +115,7 @@ section h5 {
 .dropdown-item:focus {
   box-shadow: none !important;
   outline: none !important;
+  background: transparent !important;
 }
 .dropdown-menu {
   background: transparent;
