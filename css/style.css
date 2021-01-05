@@ -4,8 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-* {
+html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 section {
   padding: 1.5rem;
@@ -114,7 +115,7 @@ section h5 {
 .dropdown-item:focus,
 .dropdown-item:active {
   box-shadow: none;
-  outline: none;
+  outline: none !important;
 }
 .dropdown-menu {
   background: transparent;
@@ -392,7 +393,7 @@ input:not(:focus):valid ~ .floating-label {
 }
 .form-group input:focus,
 .form-group textarea:focus {
-  color: #777777;
+  color: #151515;
   box-shadow: none;
   border-bottom: 2px solid #151515;
 }
@@ -528,7 +529,7 @@ footer .copyright::before {
   }
   .carousel-caption {
     display: block;
-    bottom: 130px;
+    bottom: 200px;
   }
   .preheading {
     font-size: 0.6rem;
