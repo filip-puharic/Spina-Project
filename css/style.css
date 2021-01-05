@@ -117,7 +117,6 @@ section h5 {
 .dropdown-item:active {
   box-shadow: none !important;
   outline: none !important;
-  background: transparent !important;
 }
 .dropdown-menu {
   background: transparent;
@@ -522,7 +521,7 @@ footer .copyright::before {
   .carousel-caption {
     display: none;
   }
-  .hero-section .btn:hover {
+  .btn-transparent:hover {
     background: transparent !important;
   }
 }
