@@ -103,7 +103,6 @@ section h5 {
 .btn-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 7rem;
 }
 .btn:hover {
   background: #f5a637 !important;
@@ -252,6 +251,7 @@ section h5 {
   color: #151515;
   background: transparent;
   font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
   font-weight: 600;
   list-style-type: none;
   line-height: 1.5;
@@ -326,7 +326,7 @@ section h5 {
   padding: 2rem;
   margin: 1rem 0;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-  height: 85vh;
+  height: auto;
 }
 .info li {
   list-style: none;
