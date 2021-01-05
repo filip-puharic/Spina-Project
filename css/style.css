@@ -112,7 +112,9 @@ section h5 {
   transform: scale(0.95);
 }
 .btn:focus,
-.dropdown-item:focus {
+.btn:active,
+.dropdown-item:focus,
+.dropdown-item:active {
   box-shadow: none !important;
   outline: none !important;
   background: transparent !important;
@@ -151,12 +153,7 @@ section h5 {
 .nav-link {
   padding: 0.3rem 1rem !important;
 }
-.nav-link.active,
-.nav-link:hover,
-.dropdown-item.active,
-.dropdown-item:hover {
-  color: #f5a637 !important;
-}
+
 .navbar-hide {
   pointer-events: none;
   opacity: 0;
