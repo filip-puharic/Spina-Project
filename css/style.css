@@ -471,6 +471,9 @@ footer .copyright::before {
   section {
     padding: 6rem 0;
   }
+  .carousel-caption {
+    bottom: 140px;
+  }
   .about-img-section {
     padding: 0 20% 0 0;
   }
@@ -491,10 +494,8 @@ footer .copyright::before {
     height: 100vh;
   }
 }
+
 @media only screen and (max-width: 992px) {
-  .navbar-nav.ml-auto {
-    background: transparent;
-  }
   .navbar-nav a {
     font-size: 0.8rem;
     font-weight: 600;
@@ -502,7 +503,7 @@ footer .copyright::before {
     text-align: center;
   }
   .carousel-caption {
-    bottom: 170px;
+    bottom: 400px;
   }
   .carousel-caption p {
     font-size: 0.85rem;
@@ -513,10 +514,33 @@ footer .copyright::before {
   }
 }
 
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .carousel-caption {
+    display: none;
+  }
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .navbar-nav a {
+    font-size: 0.7rem;
+  }
   .carousel-caption {
-    bottom: 100px;
+    display: block;
+    bottom: 130px;
+  }
+  .preheading {
+    font-size: 0.6rem;
+  }
+  .carousel-caption h5 {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+  .carousel-caption p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    width: 100%;
   }
   section#contact {
     padding: 0;
@@ -525,9 +549,13 @@ footer .copyright::before {
     padding: 1rem;
   }
   .info li {
-    margin: 1rem 0;
+    margin: 0.3rem 0;
   }
   .info i {
     margin: 1rem;
+  }
+  .info span {
+    font-size: 0.9rem;
+    margin-left: 0;
   }
 }
