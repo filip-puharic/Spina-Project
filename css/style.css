@@ -522,7 +522,7 @@ footer .copyright::before {
   .carousel-caption {
     display: none;
   }
-  .btn:hover {
+  .hero-section .btn:hover {
     background: transparent !important;
   }
 }
