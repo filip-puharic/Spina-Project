@@ -33,10 +33,10 @@ section h5 {
 /* Hero section */
 
 .hero-section {
-  height: 100vh;
-  min-height: 300px;
+  height: 100vh !important;
+  position: relative;
 }
-.hero-section:before {
+.hero-section::before {
   background: #000;
   content: '';
   position: absolute;
@@ -405,6 +405,7 @@ input:-webkit-autofill:active {
 }
 iframe {
   margin-top: 5rem;
+  width: 100% !important;
 }
 /* End of contact us section */
 
@@ -509,5 +510,24 @@ footer .copyright::before {
   }
   .about-img-section {
     margin-bottom: 2.5rem;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .carousel-caption {
+    bottom: 100px;
+  }
+  section#contact {
+    padding: 0;
+  }
+  .info {
+    padding: 1rem;
+  }
+  .info li {
+    margin: 1rem 0;
+  }
+  .info i {
+    margin: 1rem;
   }
 }
