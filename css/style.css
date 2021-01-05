@@ -100,10 +100,12 @@ section h5 {
   margin: 0 0.5rem;
   text-transform: uppercase;
   transition: all 0.3s linear;
+  outline: none;
 }
 .btn-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 7rem !important;
 }
 .btn:hover {
   background: #f5a637 !important;
@@ -115,7 +117,6 @@ section h5 {
 .dropdown-item:focus,
 .dropdown-item:active {
   box-shadow: none;
-  outline: none !important;
 }
 .dropdown-menu {
   background: transparent;
