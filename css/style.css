@@ -47,9 +47,6 @@ section h5 {
   left: 0;
   opacity: 0.4;
 }
-.carousel-caption {
-  bottom: 220px;
-}
 .preheading {
   font-size: 0.75rem;
   font-weight: 700;
@@ -128,9 +125,8 @@ section h5 {
   font-family: 'Lato', sans-serif;
   font-size: 0.7rem;
   font-weight: 700;
-  line-height: 1.25rem;
   letter-spacing: 1px;
-  margin: 0 0.5rem;
+  margin: 0 0.9rem;
   text-transform: uppercase;
   transition: all 0.3s linear;
   padding: 0;
@@ -150,6 +146,13 @@ section h5 {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  border: none;
+  outline: none;
 }
 .nav-link {
   padding: 0.3rem 1rem !important;
@@ -339,6 +342,13 @@ section h5 {
 .info span {
   margin-left: 10px;
   opacity: 0.7;
+}
+.info .custom-span {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  opacity: inherit;
+  margin: 0.5rem 0 0 2.4rem;
 }
 .info p {
   color: #151515;
@@ -533,12 +543,15 @@ footer .copyright::before {
   .navbar-nav a {
     font-size: 0.7rem;
   }
+  .navbar-brand {
+    display: none;
+  }
   .carousel-caption {
     display: block;
-    bottom: 200px;
+    bottom: 30%;
   }
   .preheading {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   .carousel-caption h5 {
     font-size: 3rem;
@@ -563,6 +576,9 @@ footer .copyright::before {
   .info span {
     font-size: 0.9rem;
     margin-left: 0;
+  }
+  .info .custom-span {
+    margin: 0.5rem 0 0.5rem 3.8rem;
   }
   footer .copyright::before {
     display: none;
