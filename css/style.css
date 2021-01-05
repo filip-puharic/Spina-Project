@@ -153,7 +153,12 @@ section h5 {
 .nav-link {
   padding: 0.3rem 1rem !important;
 }
-
+.nav-link.active,
+.nav-link:hover,
+.dropdown-item.active,
+.dropdown-item:hover {
+  color: #f5a637 !important;
+}
 .navbar-hide {
   pointer-events: none;
   opacity: 0;
@@ -516,6 +521,9 @@ footer .copyright::before {
 @media (max-width: 767.98px) {
   .carousel-caption {
     display: none;
+  }
+  .btn:hover {
+    background: transparent !important;
   }
 }
 
