@@ -43,7 +43,7 @@ function displayMenuItems(menuItems) {
   sectionCenter.innerHTML = displayMenu;
 }
 
-// scroll functions
+// Navbar disappear after first scrolling
 $(window).scroll(function (e) {
   // add/remove class to navbar when scrolling to hide/show
   var scroll = $(window).scrollTop();
@@ -54,6 +54,9 @@ $(window).scroll(function (e) {
   }
 });
 
-document
-  .querySelector('.jsYear')
-  .appendChild(document.createTextNode(new Date().getFullYear()));
+// Fancybox settings
+$('[data-fancybox="images"]').fancybox({
+  loop: true,
+  buttons: ['share', 'slideShow', 'close'],
+  transitionEffect: 'circular',
+});

@@ -31,6 +31,9 @@ section h5 {
 .menu-heading {
   padding-top: 3rem;
 }
+li {
+  list-style-type: none;
+}
 /* Hero section */
 
 .hero-section {
@@ -46,6 +49,9 @@ section h5 {
   bottom: 0;
   left: 0;
   opacity: 0.4;
+}
+.hero-section img {
+  object-fit: cover;
 }
 .preheading {
   font-size: 0.75rem;
@@ -183,7 +189,6 @@ section h5 {
   font-size: 1.25rem;
   line-height: 1.5;
   position: relative;
-  margin-bottom: 2rem;
 }
 .about-description:before {
   display: block;
@@ -202,10 +207,6 @@ section h5 {
 .about-img {
   transition: transform 0.5s ease-in-out;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-}
-.about-img:hover {
-  transform: scale(0.95);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 #about h2 {
   font-size: 1.75rem;
@@ -239,6 +240,9 @@ section h5 {
 
 #menu {
   background: #f0f0f0;
+}
+.menu-heading {
+  font-size: 2rem !important;
 }
 .menu-heading,
 .menu-subheading {
@@ -316,6 +320,10 @@ section h5 {
   transform: scale(1.05);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
+#gallery a {
+  text-decoration: none;
+  outline: none;
+}
 
 /* End of gallery section */
 
@@ -349,9 +357,6 @@ section h5 {
   color: inherit;
   opacity: inherit;
   margin: 0.5rem 0 0 2.4rem;
-}
-.info p {
-  color: #151515;
 }
 .info i {
   color: #f5a637;
@@ -428,7 +433,7 @@ iframe {
 footer {
   background-color: #151515;
   color: #777777;
-  padding: 3rem;
+  padding: 1rem;
 }
 footer h5 {
   font-family: 'Lato', sans-serif;
@@ -443,10 +448,11 @@ footer h5 {
 footer img {
   max-height: 170px;
   margin-top: 2rem;
+  border-radius: 50%;
 }
 footer .copyright,
 .author {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 footer .copyright::before {
   display: inline-block;
@@ -461,8 +467,9 @@ footer .copyright::before {
   color: #f5a637;
 }
 .author a:hover {
-  color: #f0f0f0;
+  border-bottom: 2px solid #f5a637;
 }
+
 /* End of footer section */
 
 /* Responsivness */
@@ -526,10 +533,18 @@ footer .copyright::before {
   .about-img-section {
     margin-bottom: 2.5rem;
   }
+  .about-hero .about-description {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .navbar-brand {
+    display: none;
+  }
   .carousel-caption {
     display: none;
   }
@@ -542,9 +557,6 @@ footer .copyright::before {
 @media (max-width: 575.98px) {
   .navbar-nav a {
     font-size: 0.7rem;
-  }
-  .navbar-brand {
-    display: none;
   }
   .carousel-caption {
     display: block;
