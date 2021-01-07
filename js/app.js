@@ -9,7 +9,7 @@ const filterBtns = document.querySelectorAll('.filter-btn');
 
 // Load items
 window.addEventListener('DOMContentLoaded', function () {
-  displayMenuItems(food);
+  displayMenuItems(cocktails);
 });
 
 // Filter items
