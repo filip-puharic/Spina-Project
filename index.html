@@ -603,7 +603,18 @@
           <div class="col-lg-6">
             <div class="info">
               <h5>Send a Message</h5>
-              <form method="POST" data-netlify="true">
+              <form
+                method="POST"
+                action="./index.html#contact"
+                netlify-honeypot="bot-field"
+                data-netlify="true"
+              >
+                <input
+                  type="hidden"
+                  id="subject"
+                  name="subject"
+                  value="Špina Bar"
+                />
                 <div class="form-group">
                   <input
                     class="form-control"
