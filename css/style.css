@@ -120,6 +120,8 @@ li {
 }
 .dropdown-item:focus,
 .dropdown-item:active {
+  color: #f5a637 !important;
+  background: transparent !important;
   box-shadow: none !important;
   outline: none !important;
 }
@@ -132,6 +134,7 @@ li {
   background: transparent;
   border: none;
   min-width: 100%;
+  margin-left: -0.5rem;
   color: #151515;
 }
 .dropdown-item {
