@@ -4,7 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-html {
+html,
+body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -111,23 +112,26 @@ li {
   justify-content: center;
   margin-bottom: 10rem !important;
 }
-.btn:hover {
-  background: #f5a637 !important;
-  color: #fff;
-  transform: scale(0.95);
-}
 .btn:focus,
-.btn:active,
+.btn:active {
+  background: #f5a637 !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
 .dropdown-item:focus,
 .dropdown-item:active {
   box-shadow: none !important;
   outline: none !important;
 }
+.btn:hover {
+  background: #f5a637 !important;
+  color: #fff;
+  transform: scale(0.95);
+}
 .dropdown-menu {
   background: transparent;
   border: none;
   min-width: 100%;
-  margin-left: -0.5rem;
   color: #151515;
 }
 .dropdown-item {
