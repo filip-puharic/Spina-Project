@@ -1,4 +1,4 @@
-# Špina-Bar
+# [Špina-Bar](https://spina-bar.netlify.app/)
 
 Špina Bar is my first project with purpose. It is a fully responsive, single page designed website for the most popular cocktail bar in Makarska, Croatia.
 
