@@ -36,6 +36,12 @@ section h5 {
 li {
   list-style-type: none;
 }
+.text-custom {
+  font-family: 'poppins', sans-serif;
+  color: #f5a637;
+  opacity: 1 !important;
+  margin: 0 !important;
+}
 /* Hero section */
 
 .hero-section {
@@ -74,7 +80,7 @@ li {
   margin-top: 2rem;
 }
 .carousel-caption p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Baloo 2', sans-serif;
   margin: auto;
   line-height: 2;
   width: 60%;
@@ -348,6 +354,10 @@ li {
   text-decoration: none;
   outline: none;
 }
+#gallery .text-custom:hover {
+  color: #f5a637;
+  border-bottom: 1px solid #f5a637;
+}
 
 /* End of gallery section */
 
@@ -589,7 +599,7 @@ footer .copyright::before {
 @media (max-width: 575.98px) {
   .carousel-caption {
     display: block;
-    bottom: 25%;
+    bottom: 27%;
   }
   .preheading {
     font-size: 0.6rem;
