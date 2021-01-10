@@ -65,7 +65,7 @@ li {
   font-family: 'Lato', sans-serif;
   color: #f5a637;
 }
-.carousel-caption h5 {
+.carousel-caption h1 {
   font-family: 'Playfair Display', serif;
   font-size: 4rem;
   font-weight: bold;
@@ -594,7 +594,7 @@ footer .copyright::before {
   .preheading {
     font-size: 0.6rem;
   }
-  .carousel-caption h5 {
+  .carousel-caption h1 {
     font-size: 3rem;
     margin-top: 1rem;
   }
