@@ -130,11 +130,11 @@ li {
   color: #fff;
   transform: scale(0.95);
 }
-.dropdown-menu {
+.dropdown-menu,
+.dropdown-menu .show {
   background: transparent;
   border: none;
   min-width: 100%;
-  margin-left: -0.5rem;
   color: #151515;
 }
 .dropdown-item {
