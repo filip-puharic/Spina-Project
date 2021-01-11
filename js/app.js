@@ -54,6 +54,10 @@ $(window).scroll(function (e) {
   }
 });
 
+// Show current year in footer
+document
+  .querySelector('.jsYear')
+  .appendChild(document.createTextNode(new Date().getFullYear()));
 // Fancybox settings
 $('[data-fancybox="images"]').fancybox({
   loop: true,
