@@ -716,14 +716,6 @@ footer .copyright::before {
   .carousel-caption h1 {
     font-size: 4rem;
   }
-  .carousel-caption p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-  }
-  .carousel-caption .btn {
-    font-size: 1rem;
-    line-height: 2;
-  }
   .alert .list-group-item {
     font-size: 0.8rem;
     line-height: 1.2;
