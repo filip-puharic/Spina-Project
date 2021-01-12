@@ -599,6 +599,9 @@ footer .copyright::before {
     display: block;
     bottom: 20%;
   }
+  .navbar-nav a {
+    font-size: 0.7rem;
+  }
   .btn-container .btn {
     font-size: 0.6rem;
     padding: 0.2rem;
