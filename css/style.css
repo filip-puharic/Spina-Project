@@ -692,14 +692,17 @@ footer .copyright::before {
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .carousel-caption {
+    bottom: 30% !important;
+  }
   .navbar-nav a {
-    font-size: 0.8rem !important;
+    font-size: 0.8rem;
   }
   .carousel-caption h1 {
-    font-size: 3.5rem !important;
+    font-size: 3.5rem;
   }
   .carousel-caption p {
-    font-size: 0.9rem !important;
+    font-size: 0.9rem;
     line-height: 1.7;
   }
   .alert .list-group-item {
@@ -709,10 +712,13 @@ footer .copyright::before {
   }
 }
 
-/* ----------- iPhone X ----------- */
+/* ----------- iPhone X, iPhone 12 Mini, iPhone 11 Pro, iPhone Xs, and iPhone X----------- */
 
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .carousel-caption {
+    bottom: 35%;
+  }
   .navbar-nav a {
     font-size: 1rem;
   }
@@ -733,6 +739,42 @@ footer .copyright::before {
   }
 }
 
+/* iPhone 11 */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  .carousel-caption {
+    bottom: 40%;
+  }
+  .navbar-nav a {
+    font-size: 1rem;
+  }
+  .carousel-caption h1 {
+    font-size: 4rem;
+  }
+}
+
+/* Iphone 11 Pro Max and Iphone XS Max */
+/* Portrait */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .carousel-caption {
+    bottom: 40% !important;
+  }
+}
+
+/* Iphone 12 and Iphone 12 Pro */
+
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  .carousel-caption {
+    bottom: 40%;
+  }
+}
+
+/* iPhone 12 Pro Max */
+
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+  .carousel-caption {
+    bottom: 45% !important;
+  }
+}
 /* ----------- iPad 1, 2, Mini and Air ----------- */
 
 /* Portrait */
