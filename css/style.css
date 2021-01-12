@@ -775,6 +775,32 @@ footer .copyright::before {
     bottom: 45% !important;
   }
 }
+/* Samsung Galaxy S7 */
+@media only screen and (device-width: 360px) and (device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
+  .carousel-caption {
+    bottom: 27% !important;
+  }
+}
+
+/* Samsung Galaxy S8 */
+@media only screen and (device-width: 360px) and (device-height: 740px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
+  .carousel-caption {
+    bottom: 30% !important;
+  }
+  .navbar-nav a {
+    font-size: 1rem;
+  }
+  .carousel-caption h1 {
+    font-size: 4rem;
+  }
+}
+
+/* Samsung Galaxy S10 */
+@media only screen and (device-width: 360px) and (device-height: 718px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
+  .carousel-caption {
+    bottom: 30% !important;
+  }
+}
 
 /* Samsung Galaxy S10 */
 @media only screen and (device-width: 360px) and (device-height: 760px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
@@ -788,6 +814,20 @@ footer .copyright::before {
     font-size: 4rem;
   }
 }
+
+/* Samsung Galaxy S20 */
+@media only screen and (device-width: 360px) and (device-height: 800px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
+  .carousel-caption {
+    bottom: 30% !important;
+  }
+  .navbar-nav a {
+    font-size: 1rem;
+  }
+  .carousel-caption h1 {
+    font-size: 4rem;
+  }
+}
+
 /* ----------- iPad 1, 2, Mini and Air ----------- */
 
 /* Portrait */
