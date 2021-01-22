@@ -192,6 +192,10 @@ li {
   color: #fff;
   border: none;
 }
+#back-to-top-btn i {
+  display: block;
+  text-align: center;
+}
 /* End of back to top button */
 
 /* Navigation */
@@ -450,6 +454,7 @@ li {
     #285aeb 90%
   );
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .info i.fa-tripadvisor {
