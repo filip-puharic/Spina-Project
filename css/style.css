@@ -212,6 +212,30 @@ li {
   border: none;
   font-size: 1.5rem;
 }
+.navbar-toggler {
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  cursor: pointer;
+  transform: scale(0.8);
+  margin-right: 20px;
+}
+.navbar-toggler::after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  animation: hamburger_puls 1s ease infinite;
+}
 .navbar-toggler:focus {
   border: none;
   outline: none;
@@ -606,6 +630,16 @@ footer .copyright::before {
   }
 }
 
+@keyframes hamburger_puls {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
 /* End of animations */
 
 /* Responsivness */
@@ -684,14 +718,13 @@ footer .copyright::before {
   }
   #back-to-top-btn {
     font-size: 18px;
-    border: none;
-    bottom: 5px;
-    right: 5px;
-  }
-  button {
-    border: none;
+    width: fit-content;
+    height: 30px;
+    bottom: 10%;
+    right: 8px;
   }
   #back-to-top-btn:hover {
+    border: 3px solid #f5a637;
     background-color: transparent;
     color: #f5a637;
   }
