@@ -666,13 +666,6 @@ footer .copyright::before {
   .about-img-section {
     margin-bottom: 2.5rem;
   }
-  #back-to-top-btn {
-    font-size: 22px;
-    width: 40px;
-    height: 40px;
-    bottom: 15px;
-    right: 15px;
-  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
