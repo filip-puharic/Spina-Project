@@ -684,6 +684,16 @@ footer .copyright::before {
   }
   #back-to-top-btn {
     font-size: 18px;
+    border: none;
+    bottom: 5px;
+    right: 5px;
+  }
+  button {
+    border: none;
+  }
+  #back-to-top-btn:hover {
+    background-color: transparent;
+    color: #f5a637;
   }
 }
 
