@@ -42,6 +42,7 @@ li {
   opacity: 1 !important;
   margin: 0 !important;
 }
+
 /* Hero section */
 
 .hero-section {
@@ -165,6 +166,33 @@ li {
   color: #151515;
 }
 /* End of buttons styling */
+
+/* Back to top button */
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  color: #f5a637;
+  border: 3px solid #f5a637;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+  z-index: 1000;
+}
+#back-to-top-btn:hover {
+  background-color: #151515;
+  color: #fff;
+  border: none;
+}
+/* End of back to top button */
 
 /* Navigation */
 
@@ -374,8 +402,11 @@ li {
   font-size: 1rem;
   padding: 2rem;
   margin: 1rem 0;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
   height: auto;
+}
+.info:hover {
+  box-shadow: 0 0 10px #f5a637;
 }
 .info li {
   list-style: none;
@@ -397,14 +428,35 @@ li {
   cursor: pointer;
   transition: transform 0.5s ease-in-out;
 }
+.info a {
+  text-decoration: none;
+}
 .social-media i {
-  color: #151515;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  padding: 1rem 0.5rem;
+}
+.info i.fa-facebook {
+  color: #3b5998;
+}
+.info i.fa-instagram {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.info i.fa-tripadvisor {
+  color: #151515;
 }
 .info i:hover {
   transform: scale(1.25);
-  opacity: 0.8;
 }
 .form-group {
   position: relative;
@@ -515,6 +567,42 @@ footer .copyright::before {
 
 /* End of footer section */
 
+/* Animations */
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+/* fadeInUp */
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-name: btnExit;
+}
+/* fadeOutDown */
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+/* End of animations */
+
 /* Responsivness */
 
 @media only screen and (min-width: 992px) {
@@ -573,6 +661,13 @@ footer .copyright::before {
   .about-img-section {
     margin-bottom: 2.5rem;
   }
+  #back-to-top-btn {
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    bottom: 15px;
+    right: 15px;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -588,6 +683,9 @@ footer .copyright::before {
   }
   .btn-transparent:hover {
     background: transparent !important;
+  }
+  #back-to-top-btn {
+    font-size: 18px;
   }
 }
 
