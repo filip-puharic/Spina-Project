@@ -717,7 +717,7 @@ footer .copyright::before {
     background: transparent !important;
   }
   #back-to-top-btn {
-    font-size: 18px;
+    border: none;
     bottom: 10%;
     right: 8px;
   }
