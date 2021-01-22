@@ -718,15 +718,16 @@ footer .copyright::before {
   }
   #back-to-top-btn {
     font-size: 18px;
-    width: fit-content;
-    height: 30px;
     bottom: 10%;
     right: 8px;
   }
   #back-to-top-btn:hover {
-    border: 3px solid #f5a637;
+    border: none;
     background-color: transparent;
     color: #f5a637;
+  }
+  button {
+    border: none;
   }
 }
 
