@@ -1,0 +1,14 @@
+{
+    "name": "\u0160pina Bar",
+    "short_name": "\u0160pina Bar",
+    "icons": [
+        {
+            "src": "/android-chrome-96x96.png?v=XBykm0PoQ8",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
