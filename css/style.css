@@ -43,6 +43,11 @@ li {
   margin: 0 !important;
 }
 
+::selection {
+  background-color: #f5a637;
+  color: #fff;
+}
+
 /* Hero section */
 
 .hero-section {
@@ -410,6 +415,7 @@ li {
   text-decoration: none;
   outline: none;
 }
+
 #gallery .text-custom:hover {
   color: #f5a637;
   border-bottom: 1px solid #f5a637;
@@ -432,6 +438,7 @@ li {
   margin: 1rem 0;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
   height: auto;
+  transition: box-shadow 0.5s;
 }
 .info:hover {
   box-shadow: 0 0 10px #f5a637;
@@ -511,6 +518,7 @@ li {
   border: none;
   border-bottom: 2px solid #151515;
   outline: none;
+  transition: all 0.3s;
 }
 .form-group textarea {
   min-height: 120px;
@@ -531,7 +539,7 @@ input:not(:focus):valid ~ .floating-label {
 .form-group input:focus,
 .form-group textarea:focus {
   box-shadow: none;
-  border-bottom: 2px solid #f5a637;
+  border-bottom: 3px solid #f5a637;
 }
 .form-group textarea:focus {
   border: 2px solid #f5a637;
@@ -663,7 +671,7 @@ footer .copyright::before {
     padding: 6rem 0;
   }
   .carousel-caption {
-    bottom: 30%;
+    bottom: 35%;
   }
   .about-img-section {
     padding: 0 20% 0 0;
@@ -708,7 +716,7 @@ footer .copyright::before {
     display: none;
   }
   .carousel-caption {
-    display: none;
+    bottom: 35%;
   }
   .about-hero .about-description {
     font-size: 1.2rem;
@@ -736,8 +744,7 @@ footer .copyright::before {
 /* Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .carousel-caption {
-    display: block;
-    bottom: 20%;
+    bottom: 17%;
   }
   .navbar-nav a {
     font-size: 0.7rem;
@@ -892,6 +899,15 @@ footer .copyright::before {
   }
 }
 
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .carousel-caption {
+    display: none;
+  }
+  .navbar-brand {
+    display: none;
+  }
+}
 /* Iphone 11 Pro Max and Iphone XS Max */
 
 /* Portrait */
@@ -905,7 +921,7 @@ footer .copyright::before {
 
 @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
   .carousel-caption {
-    bottom: 40%;
+    bottom: 37%;
   }
 }
 
@@ -913,7 +929,7 @@ footer .copyright::before {
 
 @media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
   .carousel-caption {
-    bottom: 45% !important;
+    bottom: 40% !important;
   }
 }
 
@@ -927,7 +943,7 @@ footer .copyright::before {
 /* Samsung Galaxy S8 */
 @media only screen and (device-width: 360px) and (device-height: 740px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
   .carousel-caption {
-    bottom: 30% !important;
+    bottom: 28% !important;
   }
   .navbar-nav a {
     font-size: 0.9rem;
@@ -940,7 +956,7 @@ footer .copyright::before {
 /* Samsung Galaxy Note 10 */
 @media only screen and (device-width: 360px) and (device-height: 718px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
   .carousel-caption {
-    bottom: 30% !important;
+    bottom: 28% !important;
   }
   .navbar-nav a {
     font-size: 0.9rem;
@@ -976,29 +992,10 @@ footer .copyright::before {
   }
 }
 
-/* ----------- iPad 1, 2, Mini and Air ----------- */
-
-/* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  .carousel-caption {
-    bottom: 40%;
-  }
-  .navbar a {
-    font-size: 1rem;
-  }
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  .carousel-caption {
-    bottom: 25%;
-  }
-}
-
 /* ----------- iPad Pro 12.9" ----------- */
 
 /* Portrait */
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .preheading {
     font-size: 0.9rem;
   }
@@ -1017,5 +1014,11 @@ footer .copyright::before {
   }
   .about-hero .about-description {
     top: 50%;
+  }
+}
+/* Ipad landscape */
+@media only screen and (min-device-height: 768px) and (max-device-height: 1023px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .carousel-caption {
+    bottom: 30%;
   }
 }
