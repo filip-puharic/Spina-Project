@@ -494,6 +494,9 @@ li {
 .info i:hover {
   transform: scale(1.25);
 }
+.info:focus {
+  outline: none;
+}
 .form-group {
   position: relative;
   margin-bottom: 1.75rem;
@@ -933,6 +936,32 @@ footer .copyright::before {
   }
 }
 
+/* Samsung Galaxy A50s, A30 */
+@media only screen and (device-width: 412px) and (device-height: 892px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2.625) {
+  .carousel-caption {
+    bottom: 40% !important;
+  }
+  .navbar-nav a {
+    font-size: 0.9rem;
+  }
+  .carousel-caption h1 {
+    font-size: 4rem;
+  }
+}
+
+/* Samsung Galaxy A71, A51, A70s */
+@media only screen and (device-width: 412px) and (device-height: 914px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2.625) {
+  .carousel-caption {
+    bottom: 40% !important;
+  }
+  .navbar-nav a {
+    font-size: 0.9rem;
+  }
+  .carousel-caption h1 {
+    font-size: 4rem;
+  }
+}
+
 /* Samsung Galaxy S7 */
 @media only screen and (device-width: 360px) and (device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
   .carousel-caption {
@@ -992,6 +1021,91 @@ footer .copyright::before {
   }
 }
 
+/* Xiaomi Redmi Note 9, 8 Pro, 8, 7*/
+@media only screen and (device-width: 393px) and (device-height: 851px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2.75) {
+  .carousel-caption {
+    bottom: 38% !important;
+  }
+  .navbar-nav a {
+    font-size: 0.9rem;
+  }
+  .carousel-caption h1 {
+    font-size: 4rem;
+  }
+}
+
+/* Xiaomi Redmi Note 9, 8 Pro, 8, 7*/
+@media only screen and (device-width: 393px) and (device-height: 873px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2.75) {
+  .carousel-caption {
+    bottom: 38% !important;
+  }
+  .navbar-nav a {
+    font-size: 0.9rem;
+  }
+  .carousel-caption h1 {
+    font-size: 4rem;
+  }
+}
+
+/*Huawei P9, P9 Lite, P8 Lite */
+@media only screen and (device-width: 360px) and (device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .carousel-caption {
+    bottom: 25% !important;
+  }
+}
+
+/*Huawei P20 Pro */
+@media only screen and (device-width: 360px) and (device-height: 747px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .carousel-caption {
+    bottom: 30% !important;
+  }
+  .navbar-nav a {
+    font-size: 0.9rem;
+  }
+  .carousel-caption h1 {
+    font-size: 4rem;
+  }
+}
+
+/*Huawei P30 Lite */
+@media only screen and (device-width: 360px) and (device-height: 771px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .carousel-caption {
+    bottom: 30% !important;
+  }
+  .navbar-nav a {
+    font-size: 0.9rem;
+  }
+  .carousel-caption h1 {
+    font-size: 4rem;
+  }
+}
+
+/* Huawei p40, Huawei P30, Huawei P30 Pro */
+@media only screen and (device-width: 360px) and (device-height: 780px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .carousel-caption {
+    bottom: 30% !important;
+  }
+  .navbar-nav a {
+    font-size: 0.9rem;
+  }
+  .carousel-caption h1 {
+    font-size: 4rem;
+  }
+}
+
+/* Huawei p40 lite */
+@media only screen and (device-width: 360px) and (device-height: 770px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .carousel-caption {
+    bottom: 30% !important;
+  }
+  .navbar-nav a {
+    font-size: 0.9rem;
+  }
+  .carousel-caption h1 {
+    font-size: 4rem;
+  }
+}
+
 /* ----------- iPad Pro 12.9" ----------- */
 
 /* Portrait */
@@ -1020,5 +1134,11 @@ footer .copyright::before {
 @media only screen and (min-device-height: 768px) and (max-device-height: 1023px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .carousel-caption {
     bottom: 30%;
+  }
+}
+
+@media (hover: none) {
+  .info:hover {
+    box-shadow: 0 8px 15px rgb(0 0 0 / 40%);
   }
 }
