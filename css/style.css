@@ -750,7 +750,7 @@ footer .copyright::before {
     pointer-events: auto;
   }
   .navbar .navbar-collapse .navbar-nav {
-    margin: auto auto;
+    margin: 0 auto;
   }
   .navbar .navbar-collapse .nav-item a {
     font-size: 1.5rem;
@@ -804,7 +804,7 @@ footer .copyright::before {
     margin-bottom: 10rem !important;
   }
   .dropdown-item {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     margin-bottom: 0.5rem;
   }
   .about-hero .about-description {
