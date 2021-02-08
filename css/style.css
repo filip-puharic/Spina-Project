@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
 }
 section {
-  padding: 1.5rem;
+  padding: 6rem 0;
 }
 section p {
   font-family: 'Roboto', sans-serif;
@@ -30,9 +30,6 @@ section h5 {
   color: #151515;
   margin-bottom: 1rem;
 }
-.menu-heading {
-  padding-top: 3rem;
-}
 li {
   list-style-type: none;
 }
@@ -42,14 +39,12 @@ li {
   opacity: 1 !important;
   margin: 0 !important;
 }
-
 ::selection {
   background-color: #f5a637;
   color: #fff;
 }
 
 /* Hero section */
-
 .hero-section {
   height: 100vh !important;
   position: relative;
@@ -68,36 +63,43 @@ li {
   object-fit: cover;
 }
 .preheading {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
 .preheading .highlight {
   font-family: 'Lato', sans-serif;
   color: #f5a637;
 }
+.carousel-caption {
+  top: 50%;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .carousel-caption h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  margin-top: 2rem;
+  letter-spacing: 0.5rem;
+  margin: 1.5rem auto;
 }
 .carousel-caption p {
+  font-size: 1.1rem;
   font-family: 'Baloo 2', sans-serif;
-  margin: auto;
-  line-height: 2;
-  width: 60%;
+  margin: 0 auto;
+  line-height: 1.7;
+  width: auto;
 }
 .carousel-caption a {
   background: #262626;
   color: #fff;
   display: inline-block;
-  padding: 0.6rem 1.5rem;
-  margin-top: 15px;
   text-transform: uppercase;
+  margin-top: 1.5rem;
 }
 .w-100 {
   height: 100vh;
@@ -112,18 +114,22 @@ li {
   border: solid 3px #f5a637;
   border-radius: 0.5rem;
   font-family: 'Lato', sans-serif;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.25rem;
   letter-spacing: 1px;
   margin: 0 0.5rem;
   text-transform: uppercase;
   transition: all 0.3s linear;
+  padding: 1rem 1.5rem;
+}
+.btn-container .btn {
+  padding: 0.7rem 1rem;
 }
 .btn-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 8.5rem !important;
+  margin-bottom: 13rem !important;
 }
 .btn:focus,
 .btn:active {
@@ -153,11 +159,11 @@ li {
 .dropdown-item {
   color: #151515;
   font-family: 'Lato', sans-serif;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
   margin: 0 auto;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
   transition: all 0.3s linear;
   padding: 0;
@@ -176,20 +182,18 @@ li {
 #back-to-top-btn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 26px;
-  width: 50px;
-  height: 50px;
+  bottom: 1.3rem;
+  right: 1.3rem;
+  font-size: 1.6rem;
+  width: 3rem;
+  height: 3rem;
   background-color: transparent;
   color: #f5a637;
   border: 3px solid #f5a637;
   cursor: pointer;
   outline: none;
   border-radius: 50%;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  transition-property: background-color, color;
+  transition: all 0.2s ease-in-out;
   z-index: 1000;
 }
 #back-to-top-btn:hover {
@@ -208,18 +212,15 @@ li {
 .navbar-nav a {
   color: #fff !important;
   font-family: 'poppins', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
 }
 .navbar-toggler {
-  border: none;
-  font-size: 1.5rem;
-}
-.navbar-toggler {
-  height: 60px;
-  width: 60px;
+  height: 5rem;
+  width: 5rem;
+  font-size: 2rem;
   display: inline-block;
   border: 3px solid #fff;
   border-radius: 50%;
@@ -230,7 +231,7 @@ li {
   z-index: 100;
   cursor: pointer;
   transform: scale(0.8);
-  margin-right: 20px;
+  margin-left: -3rem;
 }
 .navbar-toggler::after {
   position: absolute;
@@ -258,16 +259,17 @@ li {
   pointer-events: none;
   opacity: 0;
 }
-
 /* End of navigation */
 
 /* About section */
-
+section#about {
+  padding: 6rem 2rem;
+}
 .year {
   color: #626262;
   font-family: 'Arial';
   font-size: 0.8rem;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
 }
 .about-description {
   color: #151515;
@@ -290,7 +292,6 @@ li {
   height: auto;
 }
 .about-img {
-  transition: transform 0.5s ease-in-out;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 #about h2 {
@@ -323,16 +324,14 @@ li {
   font-size: 1.5rem;
   line-height: 1.5;
 }
-
 /* End of about section */
 
 /* Menu section */
-
 #menu {
   background: #f0f0f0;
 }
 .menu-heading {
-  font-size: 2rem !important;
+  font-size: 2.5rem !important;
 }
 .menu-heading,
 .menu-subheading {
@@ -382,9 +381,9 @@ li {
   text-transform: uppercase;
 }
 .menu-hero {
-  height: 30vh;
   background: url('../images/menu-hero.jpg') no-repeat 50% / cover !important;
   position: relative;
+  height: 60vh;
 }
 .menu-hero-description {
   color: #fff !important;
@@ -398,11 +397,9 @@ li {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
-
 /* End of menu section */
 
 /* Gallery section */
-
 #gallery img {
   transition: transform 0.5s ease-in-out;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
@@ -415,19 +412,15 @@ li {
   text-decoration: none;
   outline: none;
 }
-
 #gallery .text-custom:hover {
   color: #f5a637;
   border-bottom: 1px solid #f5a637;
 }
-
 /* End of gallery section */
 
 /* Contact us section */
-
 #contact {
   background: #f0f0f0;
-  padding-top: 0;
   padding-bottom: 0;
 }
 .info {
@@ -436,12 +429,12 @@ li {
   font-size: 1rem;
   padding: 2rem;
   margin: 1rem 0;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   height: auto;
   transition: box-shadow 0.5s;
 }
 .info:hover {
-  box-shadow: 0 0 10px #f5a637;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
 }
 .info li {
   list-style: none;
@@ -550,6 +543,9 @@ input:not(:focus):valid ~ .floating-label {
 .form-group input[type='text'] {
   text-transform: capitalize;
 }
+.form-group .btn {
+  padding: 0.6rem 1rem;
+}
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -564,7 +560,6 @@ iframe {
 /* End of contact us section */
 
 /* Footer section */
-
 footer {
   background-color: #151515;
   color: #777777;
@@ -572,16 +567,16 @@ footer {
 }
 footer h5 {
   font-family: 'Lato', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   color: #f5a637;
 }
 footer img {
-  max-height: 170px;
+  max-height: 150px;
   margin-top: 2rem;
   border-radius: 50%;
 }
@@ -653,8 +648,7 @@ footer .copyright::before {
 }
 /* End of animations */
 
-/* Responsivness */
-
+/* Responsivity */
 @media only screen and (min-width: 992px) {
   .about-img-section-2:after {
     background-color: #f0f0f0;
@@ -666,15 +660,6 @@ footer .copyright::before {
   }
   .menu-hero-description {
     font-size: 2.5rem;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  section {
-    padding: 6rem 0;
-  }
-  .carousel-caption {
-    bottom: 35%;
   }
   .about-img-section {
     padding: 0 20% 0 0;
@@ -697,60 +682,195 @@ footer .copyright::before {
   }
 }
 
-@media only screen and (max-width: 992px) {
-  .navbar-nav a {
-    font-size: 0.9rem;
-    font-weight: 600;
-    padding-bottom: 0.4rem;
-    text-align: center;
+@media only screen and (max-width: 991.98px) {
+  .about-hero .about-description {
+    font-size: 1.2rem;
+    bottom: 20%;
   }
-  .carousel-caption p {
-    width: 100%;
-    line-height: 1.7;
-  }
-  .about-img-section {
-    margin-bottom: 2.5rem;
+  .menu-hero {
+    height: 30vh;
   }
 }
 
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media only screen and (max-width: 767.98px) {
+  .navbar-toggler {
+    margin-left: 0;
+  }
+  .navbar .navbar-collapse {
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #434343,
+      #000000
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #434343,
+      #000000
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center !important;
+  }
+  .navbar .navbar-collapse.collapse {
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .navbar .navbar-collapse.collapsing[style*='height'] {
+    opacity: 1;
+    height: 100vh !important;
+  }
+  .navbar .navbar-collapse.collapsing {
+    opacity: 0;
+    height: 100vh;
+  }
+  .navbar .navbar-collapse.collapse.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .navbar .navbar-collapse .navbar-nav {
+    margin: auto auto;
+  }
+  .navbar .navbar-collapse .nav-item a {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
   .navbar-brand {
     display: none;
-  }
-  .carousel-caption {
-    bottom: 35%;
-  }
-  .about-hero .about-description {
-    font-size: 1.2rem;
   }
   .btn-transparent:hover {
     background: transparent !important;
   }
-  #back-to-top-btn {
-    border: none;
-    bottom: 10%;
-    right: 8px;
+  section#about {
+    padding: 2rem 2rem;
   }
-  #back-to-top-btn:hover {
-    border: none;
-    background-color: transparent;
-    color: #f5a637;
+  #about h2 {
+    margin-top: 1.5rem;
   }
   button {
     border: none;
   }
+  .preheading {
+    font-size: 0.65rem;
+    letter-spacing: 0.1rem;
+  }
+  .carousel-caption h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.35rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .btn {
+    font-size: 0.8rem;
+    padding: 0.8rem 1rem;
+  }
+  .btn-container .btn {
+    padding: 0.7rem 1rem;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem !important;
+  }
+  .dropdown-item {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .about-hero .about-description {
+    font-size: 1rem;
+    top: 10%;
+  }
+  #back-to-top-btn {
+    font-size: 1.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    bottom: 8%;
+    right: 3%;
+  }
 }
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .carousel-caption {
-    bottom: 17%;
+@media only screen and (max-width: 450px) {
+  .btn-container .btn {
+    padding: 0.7rem 0.5rem;
   }
-  .navbar-nav a {
+}
+
+@media only screen and (max-width: 376px) {
+  footer {
+    font-size: 0.8rem;
+  }
+  section h5 {
+    font-size: 1rem;
+  }
+  .menu-heading {
+    font-size: 2rem !important;
+  }
+  .navbar-toggler {
+    font-size: 1.5rem;
+  }
+  .navbar .navbar-collapse .nav-item a {
+    font-size: 1.2rem;
+  }
+  .carousel-caption a {
+    margin-top: 1rem;
+  }
+  .carousel-caption h1 {
+    margin: 1rem auto;
+  }
+  .carousel-caption p {
+    font-size: 0.85rem;
+  }
+  .carousel-caption .btn {
     font-size: 0.7rem;
+    padding: 0.6rem 0.6rem;
+  }
+  .btn {
+    margin: 0;
+  }
+  .btn-container .btn {
+    padding: 0.5rem 0.5rem;
+    margin: 0 0.3rem;
+  }
+  .menu-items {
+    grid-template-columns: 1fr;
+  }
+  .alert .list-group-item {
+    font-size: 0.7rem;
+    padding: 0.5rem 0;
+  }
+  .menu-items p {
+    font-size: 0.8rem;
+  }
+  footer .copyright::before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  section p,
+  footer {
+    font-size: 0.8rem;
+  }
+  section#contact {
+    padding-top: 2rem;
+  }
+  section#contact .menu-heading {
+    margin-top: 0;
+  }
+  .btn-container {
+    margin-bottom: 8rem !important;
   }
   .btn-container .btn {
     font-size: 0.6rem;
@@ -759,34 +879,31 @@ footer .copyright::before {
   .dropdown-item {
     font-size: 0.6rem;
   }
-  .menu-items {
-    grid-template-columns: 1fr;
-  }
   #menu h4 {
     font-size: 1rem;
+  }
+  #about h2 {
+    font-size: 1.3rem;
+  }
+  .about-description {
+    font-size: 0.8rem;
   }
   .alert .list-group-item {
     font-size: 0.6rem;
     line-height: 1.1;
     padding: 0.5rem 0;
   }
-  .menu-items p {
-    font-size: 0.8rem;
+  .preheading {
+    font-size: 0.6rem;
   }
   .carousel-caption h1 {
     font-size: 3rem;
-    margin-top: 1rem;
   }
   .carousel-caption p {
-    font-size: 0.9rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
   .about-hero .about-description {
-    font-size: 1rem;
-    top: 15%;
-  }
-  section#contact {
-    padding: 0;
+    font-size: 0.8rem;
   }
   .info {
     padding: 1rem;
@@ -804,341 +921,30 @@ footer .copyright::before {
   .info .custom-span {
     margin: 0.2rem 0 0.2rem 2.8rem;
   }
-  footer .copyright::before {
-    display: none;
-  }
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .carousel-caption {
-    display: none;
-  }
-}
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  .carousel-caption {
-    bottom: 30%;
-  }
-  .btn-container .btn {
-    font-size: 0.7rem;
-    padding: 0.5rem;
-  }
-  .dropdown-item {
-    font-size: 0.7rem;
-  }
-  #menu h4 {
-    font-size: 1.2rem;
-  }
-  .menu-items p {
-    font-size: 1rem;
-  }
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  .carousel-caption {
-    bottom: 30% !important;
-  }
-  .navbar-nav a {
+  .form-group,
+  .form-control {
     font-size: 0.8rem;
   }
-  .carousel-caption h1 {
-    font-size: 3.5rem;
-  }
-  .carousel-caption p {
-    font-size: 0.9rem;
-    line-height: 1.7;
-  }
-  .alert .list-group-item {
-    font-size: 0.8rem;
-    line-height: 1.4;
-    padding: 0.5rem 0;
-  }
-}
-
-/* ----------- iPhone X, iPhone 12 Mini, iPhone 11 Pro, iPhone Xs, and iPhone X----------- */
-
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  .carousel-caption {
-    bottom: 35%;
-  }
-  .navbar-nav a {
-    font-size: 0.9rem;
-  }
-  .carousel-caption h1 {
-    font-size: 4rem;
-  }
-  .alert .list-group-item {
-    font-size: 0.8rem;
-    line-height: 1.2;
-    padding: 0.5rem 0;
-  }
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  .carousel-caption {
-    display: none !important;
-  }
-}
-
-/* iPhone 11 */
-@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
-  .carousel-caption {
-    bottom: 40%;
-  }
-  .navbar-nav a {
-    font-size: 0.9rem;
-  }
-  .carousel-caption h1 {
-    font-size: 4rem;
-  }
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .carousel-caption {
-    display: none;
-  }
-  .navbar-brand {
-    display: none;
-  }
-}
-/* Iphone 11 Pro Max and Iphone XS Max */
-
-/* Portrait */
-@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  .carousel-caption {
-    bottom: 40% !important;
-  }
-}
-
-/* Iphone 12 and Iphone 12 Pro */
-
-@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
-  .carousel-caption {
-    bottom: 37%;
-  }
-}
-
-/* iPhone 12 Pro Max */
-
-@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
-  .carousel-caption {
-    bottom: 40% !important;
-  }
-}
-
-/* Samsung Galaxy A50s, A30 */
-@media only screen and (device-width: 412px) and (device-height: 892px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2.625) {
-  .carousel-caption {
-    bottom: 40% !important;
-  }
-  .navbar-nav a {
-    font-size: 0.9rem;
-  }
-  .carousel-caption h1 {
-    font-size: 4rem;
-  }
-}
-
-/* Samsung Galaxy A71, A51, A70s */
-@media only screen and (device-width: 412px) and (device-height: 914px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2.625) {
-  .carousel-caption {
-    bottom: 40% !important;
-  }
-  .navbar-nav a {
-    font-size: 0.9rem;
-  }
-  .carousel-caption h1 {
-    font-size: 4rem;
-  }
-}
-
-/* Samsung Galaxy S7 */
-@media only screen and (device-width: 360px) and (device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
-  .carousel-caption {
-    bottom: 27% !important;
-  }
-}
-
-/* Samsung Galaxy S8 */
-@media only screen and (device-width: 360px) and (device-height: 740px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
-  .carousel-caption {
-    bottom: 28% !important;
-  }
-  .navbar-nav a {
-    font-size: 0.9rem;
-  }
-  .carousel-caption h1 {
-    font-size: 4rem;
-  }
-}
-
-/* Samsung Galaxy Note 10 */
-@media only screen and (device-width: 360px) and (device-height: 718px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
-  .carousel-caption {
-    bottom: 28% !important;
-  }
-  .navbar-nav a {
-    font-size: 0.9rem;
-  }
-  .carousel-caption h1 {
-    font-size: 4rem;
-  }
-}
-
-/* Samsung Galaxy S10 */
-@media only screen and (device-width: 360px) and (device-height: 760px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
-  .carousel-caption {
-    bottom: 30% !important;
-  }
-  .navbar-nav a {
-    font-size: 0.9rem;
-  }
-  .carousel-caption h1 {
-    font-size: 4rem;
-  }
-}
-
-/* Samsung Galaxy S20 */
-@media only screen and (device-width: 360px) and (device-height: 800px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
-  .carousel-caption {
-    bottom: 30% !important;
-  }
-  .navbar-nav a {
-    font-size: 0.9rem;
-  }
-  .carousel-caption h1 {
-    font-size: 4rem;
-  }
-}
-
-/* Xiaomi Redmi Note 9, 8 Pro, 8, 7*/
-@media only screen and (device-width: 393px) and (device-height: 851px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2.75) {
-  .carousel-caption {
-    bottom: 38% !important;
-  }
-  .navbar-nav a {
-    font-size: 0.9rem;
-  }
-  .carousel-caption h1 {
-    font-size: 4rem;
-  }
-}
-
-/* Xiaomi Redmi Note 9, 8 Pro, 8, 7*/
-@media only screen and (device-width: 393px) and (device-height: 873px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2.75) {
-  .carousel-caption {
-    bottom: 38% !important;
-  }
-  .navbar-nav a {
-    font-size: 0.9rem;
-  }
-  .carousel-caption h1 {
-    font-size: 4rem;
-  }
-}
-
-/*Huawei P9, P9 Lite, P8 Lite */
-@media only screen and (device-width: 360px) and (device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  .carousel-caption {
-    bottom: 25% !important;
-  }
-}
-
-/*Huawei P20 Pro */
-@media only screen and (device-width: 360px) and (device-height: 747px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  .carousel-caption {
-    bottom: 30% !important;
-  }
-  .navbar-nav a {
-    font-size: 0.9rem;
-  }
-  .carousel-caption h1 {
-    font-size: 4rem;
-  }
-}
-
-/*Huawei P30 Lite */
-@media only screen and (device-width: 360px) and (device-height: 771px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  .carousel-caption {
-    bottom: 30% !important;
-  }
-  .navbar-nav a {
-    font-size: 0.9rem;
-  }
-  .carousel-caption h1 {
-    font-size: 4rem;
-  }
-}
-
-/* Huawei p40, Huawei P30, Huawei P30 Pro */
-@media only screen and (device-width: 360px) and (device-height: 780px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  .carousel-caption {
-    bottom: 30% !important;
-  }
-  .navbar-nav a {
-    font-size: 0.9rem;
-  }
-  .carousel-caption h1 {
-    font-size: 4rem;
-  }
-}
-
-/* Huawei p40 lite */
-@media only screen and (device-width: 360px) and (device-height: 770px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  .carousel-caption {
-    bottom: 30% !important;
-  }
-  .navbar-nav a {
-    font-size: 0.9rem;
-  }
-  .carousel-caption h1 {
-    font-size: 4rem;
-  }
-}
-
-/* ----------- iPad Pro 12.9" ----------- */
-
-/* Portrait */
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  .preheading {
-    font-size: 0.9rem;
-  }
-  .carousel-caption h1 {
-    margin-top: 1rem;
-    letter-spacing: 10px;
-  }
-  .carousel-caption p {
-    font-size: 1.2rem;
-    line-height: 2;
-    width: 80%;
-  }
-  .carousel-caption .btn {
-    font-size: 1rem;
-    line-height: 2;
-  }
-  .about-hero .about-description {
-    top: 50%;
-  }
-}
-/* Ipad landscape */
-@media only screen and (min-device-height: 768px) and (max-device-height: 1023px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  .carousel-caption {
-    bottom: 30%;
+  .form-group .btn {
+    padding: 0.4rem 0.7rem;
   }
 }
 
 @media (hover: none) {
   .info:hover {
     box-shadow: 0 8px 15px rgb(0 0 0 / 40%);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 950px) and (orientation: landscape) {
+  .carousel-caption {
+    display: none;
+  }
+  .navbar .navbar-collapse .nav-item a {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .navbar-toggler {
+    font-size: 1.3rem;
   }
 }
