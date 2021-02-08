@@ -799,6 +799,10 @@ footer .copyright::before {
   }
   #back-to-top-btn {
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
   .alert .list-group-item {
     font-size: 0.8rem;
