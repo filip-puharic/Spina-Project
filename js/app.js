@@ -124,3 +124,8 @@ function easeInOutCubic(t, b, c, d) {
   t -= 2;
   return (c / 2) * (t * t * t + 2) + b;
 }
+
+// Mobile toggle navigation to disappear when item selected
+$('.navbar-nav>li>a').on('click', function () {
+  $('.navbar-collapse').collapse('hide');
+});
