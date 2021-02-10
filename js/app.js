@@ -29,10 +29,10 @@ function displayMenuItems(menuItems) {
   let displayMenu = menuItems.map(function (item) {
     return `
     <div class="item-info">
-    <header>
+    <div class="item-header">
       <h4 class="text-uppercase">${item.title}</h4>
       <h4 class="price">${item.price} kn</h4>
-    </header>
+    </div>
     <p class="item-text">
     ${item.desc}
     </p>

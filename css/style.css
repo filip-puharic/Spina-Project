@@ -363,7 +363,7 @@ section#about {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 3rem;
 }
-.item-info header {
+.item-info .item-header {
   border-bottom: 0.5px dotted #151515;
   display: flex;
   justify-content: space-between;
@@ -799,8 +799,6 @@ footer .copyright::before {
     padding: 0.6rem 0.5rem;
   }
   .btn-container {
-    display: flex;
-    justify-content: center;
     margin-bottom: 10rem !important;
   }
   .dropdown-item {
@@ -850,10 +848,6 @@ footer .copyright::before {
   .btn {
     margin: 0;
   }
-  .btn-container .btn {
-    padding: 0.5rem 0.5rem;
-    margin: 0 0.3rem;
-  }
   .menu-items {
     grid-template-columns: 1fr;
   }
@@ -886,6 +880,7 @@ footer .copyright::before {
   .btn-container .btn {
     font-size: 0.6rem;
     padding: 0.2rem;
+    margin: 0 0.2rem;
   }
   .dropdown-item {
     font-size: 0.6rem;
