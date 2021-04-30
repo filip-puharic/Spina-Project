@@ -134,7 +134,6 @@ $('.navbar-nav>li>a').on('click', function () {
 const allSections = document.querySelectorAll('.section');
 const revealSection = function (entries, observer) {
   const [entry] = entries;
-  console.log(entry);
 
   if (!entry.isIntersecting) return;
 
@@ -144,7 +143,7 @@ const revealSection = function (entries, observer) {
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.15,
+  threshold: 0.03,
 });
 allSections.forEach(function (section) {
   sectionObserver.observe(section);
