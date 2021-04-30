@@ -12,11 +12,16 @@ body {
 }
 section {
   padding: 6rem 0;
+  transition: transform 1s, opacity 1s;
 }
 section p {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: #777777;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 section h2 {
   font-family: 'Playfair Display', serif;
