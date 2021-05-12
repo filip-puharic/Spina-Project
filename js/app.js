@@ -30,7 +30,7 @@ function displayMenuItems(menuItems) {
     return `
     <div class="item-info">
     <div class="item-header">
-      <h4 class="text-uppercase">${item.title}</h4>
+      <h3 class="text-uppercase">${item.title}</h3>
       <h4 class="price">${item.price} kn</h4>
     </div>
     <p class="item-text">

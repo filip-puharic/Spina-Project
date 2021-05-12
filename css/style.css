@@ -28,8 +28,7 @@ section h2 {
   font-size: 1.75rem;
   color: #151515;
 }
-section h5,
-h4 {
+section h5 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
@@ -347,8 +346,9 @@ section#about {
 #menu h2 {
   font-size: 1.75rem;
 }
-#menu h3 {
-  font-family: 'Playfair Display', serif;
+#menu h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   color: #151515;
@@ -567,7 +567,7 @@ iframe {
 /* Footer section */
 footer {
   background-color: #151515;
-  color: #777777;
+  color: #f0f0f0;
   padding: 1rem;
 }
 footer h5 {
@@ -838,8 +838,7 @@ footer .copyright::before {
   footer {
     font-size: 0.8rem;
   }
-  section h5,
-  h4 {
+  section h5 {
     font-size: 1rem;
   }
   section p {
@@ -924,7 +923,8 @@ footer .copyright::before {
   .dropdown-item {
     font-size: 0.6rem;
   }
-  #menu h3 {
+  #menu h3,
+  h4 {
     font-size: 1rem;
   }
   #about h2 {
