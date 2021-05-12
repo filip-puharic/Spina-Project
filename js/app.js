@@ -72,7 +72,7 @@ $('.dropdown-menu').on('click.bs.dropdown', function (e) {
 });
 
 // Back to top button
-const backToTopButton = document.querySelector('#back-to-top-btn');
+const backToTopButton = document.querySelector('#backToTop');
 
 window.addEventListener('scroll', scrollFunction);
 

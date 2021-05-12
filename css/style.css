@@ -28,7 +28,8 @@ section h2 {
   font-size: 1.75rem;
   color: #151515;
 }
-section h5 {
+section h5,
+h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
@@ -183,7 +184,7 @@ li {
 /* End of buttons styling */
 
 /* Back to top button */
-#back-to-top-btn {
+#backToTop {
   display: none;
   position: fixed;
   bottom: 1.3rem;
@@ -200,12 +201,12 @@ li {
   transition: all 0.2s ease-in-out;
   z-index: 1000;
 }
-#back-to-top-btn:hover {
+#backToTop:hover {
   background-color: #151515;
   color: #fff;
   border: none;
 }
-#back-to-top-btn i {
+#backToTop i {
   display: block;
   text-align: center;
 }
@@ -346,7 +347,7 @@ section#about {
 #menu h2 {
   font-size: 1.75rem;
 }
-#menu h4 {
+#menu h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
   font-weight: 700;
@@ -694,13 +695,13 @@ footer .copyright::before {
   .menu-hero {
     height: 30vh;
   }
-  #back-to-top-btn {
+  #backToTop {
     bottom: 10%;
     right: 1%;
     border: none;
     border-radius: 0;
   }
-  #back-to-top-btn:hover {
+  #backToTop:hover {
     background-color: transparent;
     color: #f5a637;
     border: none;
@@ -813,7 +814,7 @@ footer .copyright::before {
     font-size: 1rem;
     top: 10%;
   }
-  #back-to-top-btn {
+  #backToTop {
     font-size: 1.2rem;
   }
   .alert .list-group-item {
@@ -837,7 +838,8 @@ footer .copyright::before {
   footer {
     font-size: 0.8rem;
   }
-  section h5 {
+  section h5,
+  h4 {
     font-size: 1rem;
   }
   section p {
@@ -922,7 +924,7 @@ footer .copyright::before {
   .dropdown-item {
     font-size: 0.6rem;
   }
-  #menu h4 {
+  #menu h3 {
     font-size: 1rem;
   }
   #about h2 {
