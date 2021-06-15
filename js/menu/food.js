@@ -1,6 +1,7 @@
 export const food = [
-  // BAR FOOD
-
+  ////////////////////////////////
+  /////       BAR FOOD       /////
+  ////////////////////////////////
   {
     id: 1,
     title: 'TUNA PATÉ',
@@ -57,9 +58,9 @@ export const food = [
     price: 68,
     desc: `Dalmatian smoked prosciutto & bratwurst, local cheeses, jam, home made bread.`,
   },
-
-  // SNACKS
-
+  ////////////////////////////////
+  /////        SNACKS        /////
+  ////////////////////////////////
   {
     id: 9,
     title: 'Špina snack',
@@ -81,9 +82,9 @@ export const food = [
     price: 10,
     desc: `Extra portion.`,
   },
-
-  // DESSERTS
-
+  ////////////////////////////////
+  /////       DESSERTS       /////
+  ////////////////////////////////
   {
     id: 12,
     title: 'Fig dessert',

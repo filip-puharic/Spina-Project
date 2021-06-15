@@ -1,16 +1,19 @@
 export const cocktails = [
+  ////////////////////////////////
+  /////   LIGHT COCKTAILS    /////
+  ////////////////////////////////
   {
     id: 1,
     title: 'APEROL SPRITZ',
     category: 'light',
-    price: 45,
+    price: 40,
     desc: `Modern prosecco classic with aromas of orange, gentian, chichona bark. And don’t forget the eye-catching color.`,
   },
   {
     id: 2,
     title: 'HUGO',
     category: 'light',
-    price: 45,
+    price: 40,
     desc: `Another modern classic made with prosecco, fresh limes, fresh mint leaves and aromatic elderflower syrup. Delicious and sweet.`,
   },
   {
@@ -36,10 +39,10 @@ export const cocktails = [
   },
   {
     id: 6,
-    title: 'C-B-G-B',
+    title: 'ROSSO AND TONIC',
     category: 'light',
-    price: 50,
-    desc: `Intense  aromatic aperitivo, revigorating  and bitter-sweet with notes of artichockes, peppermint, herbal bitters and spicy ginger.`,
+    price: 58,
+    desc: `Bitter-sweet and harmonious, highly perfumed and herbal character of vermouth enhanced with tonic water.`,
   },
   {
     id: 7,
@@ -52,22 +55,27 @@ export const cocktails = [
     id: 8,
     title: 'MIDORI SOUR',
     category: 'light',
-    price: 58,
+    price: 48,
     desc: `With this cult japanese watermelon liqueur mixed with fresh citrus juice and soda we get closest to disco drinks – funky & quite sweet. 80’s reloaded.`,
   },
   {
     id: 9,
-    title: 'AMERICANO TONIC',
+    title: 'BREEZE',
     category: 'light',
-    price: 58,
-    desc: `Just a classic americano aperitivo cocktail (campari + sweet vermouth) uplifted with best extra dry tonic and a dash of bitters and citrus. Wonderful aperitivo drink.`,
+    price: 45,
+    desc: `A classic wine spritz cocktail upgraded with elderflower liqueur and fresh lemon juice.`,
   },
+
+  ////////////////////////////////
+  /////  CLASSIC COCKTAILS   /////
+  ////////////////////////////////
+
   {
     id: 10,
     title: 'EARL GREY NORTHSIDE',
     category: 'classic',
     price: 65,
-    desc: `Aquavit based with home-made earl grey tea syrup, peated malt spray, hibiscus & pepper dust and some exotic bitters. Exotic.`,
+    desc: `Aquavit based with home-made earl grey tea syrup, peated malt spray, hibiscus & pepper dust and some exotic bitters. Exotic!!!`,
   },
   {
     id: 11,
@@ -78,17 +86,17 @@ export const cocktails = [
   },
   {
     id: 12,
-    title: 'MARGARITA',
+    title: "TOMMY'S MARGARITA",
     category: 'classic',
     price: 68,
-    desc: `With 100% blue agave tequila, finest french orange liqueur and fresh lime juice. Get ready for fiesta acapulco or tijuana style.`,
+    desc: `One of the most popular margarita variations. Substituting cointreau for agave syrup. Crisp and agave-forward taste.`,
   },
   {
     id: 13,
-    title: 'BRANDY ALEXANDER',
+    title: 'HEMINGWAY DAQUIRI',
     category: 'classic',
-    price: 68,
-    desc: `Simple is classy! Creamy, sweet and complex - this cognac based will make you feel like a 1930’s movie star. A sweet treat.`,
+    price: 63,
+    desc: `The combo of light rum, lime, grapefruit juice and maraschino liqueur make for a bracing, complex cocktail that - unlike daquiris that suffer from excess sweetnes - finishes nice and dry.`,
   },
   {
     id: 14,
@@ -99,24 +107,24 @@ export const cocktails = [
   },
   {
     id: 15,
-    title: 'MANHATTAN',
+    title: 'ANTIQUE',
     category: 'classic',
-    price: 75,
-    desc: `Genuine and enduring heavy-weight in the cocktail world with rye whiskey, bitters and pugnent antica formula sweet vermouth.`,
+    price: 45,
+    desc: `Based on popular local liqueur ”pelinkovac” combined with almond syrup, orange and fresh lime juice. Perfect for hot summer nights.`,
   },
   {
     id: 16,
-    title: 'LAST WORD',
+    title: 'CHARLIE CHAPLIN',
     category: 'classic',
     price: 63,
-    desc: `It’s a drink that has been pleasing bar-goers since 1920, made with equal parts of gin, maraschino liquer, green chartreuse and lime juice.`,
+    desc: `This cocktail is definetely perfect when you have a sweet tooth. It’s made with gin, apricot brandy and lime juice.`,
   },
   {
     id: 17,
-    title: 'ZAGREB MULE',
+    title: 'THE GODFATHER',
     category: 'classic',
-    price: 65,
-    desc: `A modern classic made with croatian craft gin “luftbremzer”, combined with already known ingridients for mules, such as lime juice and ginger beer.`,
+    price: 53,
+    desc: `A favourite since the ‘70s , the godfather is a simple mixed drink of a scotch and amaretto. “We are gonna make you an offer you can’t refuse”`,
   },
   {
     id: 18,
@@ -124,5 +132,70 @@ export const cocktails = [
     category: 'classic',
     price: 78,
     desc: `Majestic cocktail: finest reposado tequila, coffee and orange liqueurs & aromatic and cirtus bitters. High class drink for serious drinkers and superb tequila afficionados.`,
+  },
+  {
+    id: 19,
+    title: 'GRASSHOPPER',
+    category: 'classic',
+    price: 58,
+    desc: `Think of mint chocolate thin - get it? This is simple, creamy
+    & sweet treat with some grated dark chocolate... Yummy`,
+  },
+  {
+    id: 20,
+    title: 'WHITE RUSSIAN',
+    category: 'classic',
+    price: 58,
+    desc: `Simple & tasty - vodka & coffee liquor based creamy pleasure.`,
+  },
+  {
+    id: 21,
+    title: 'MOJITO, CAIPIRINHA or MOSCOW MULE',
+    category: 'classic',
+    price: 58,
+    desc: `Popular summer cirtusy classics which will never get out of style. “If life gives you lemons, return them and ask for lime.”`,
+  },
+  {
+    id: 22,
+    title: 'AVIATION',
+    category: 'classic',
+    price: 63,
+    desc: `Fabulous looking, mighty & complex classic, with gin, violet liqueur and maraschino. Fly to the moon – play among the stars.`,
+  },
+  {
+    id: 23,
+    title: 'MARTINI',
+    category: 'classic',
+    price: 63,
+    desc: `“King of cocktails” – we like it gin & dry, but you can have it sweet, dirty, martinez, hanky panky or vodka - just like 007 agent. Beware of this one: elegance & complexity – with a licence to kill.`,
+  },
+  {
+    id: 24,
+    title: 'BASIL SMASH',
+    category: 'classic',
+    price: 63,
+    desc: `“Špina bar classic – aromatic & refreshing sour powered by gin, fresh basil leaves and lemons. Taste of real mediterranean.`,
+  },
+  {
+    id: 25,
+    title: 'NEGRONI',
+    category: 'classic',
+    price: 63,
+    desc: `Love it or hate it, this classic surely made a huuuuuge come-back lately. Harmonious blend of finest vermouth, bitter and gin. There is also chocholate negroni version.`,
+  },
+  {
+    id: 26,
+    title: 'ESPRESSO MARTINI',
+    category: 'classic',
+    price: 63,
+    desc: `Funky espresso for booze lovers - made with style and smile
+    (and freshly brewed espresso and plenty of gluten-free vodka). Mood uplifter!!`,
+  },
+  {
+    id: 27,
+    title: 'SOURS: WHISKY, PISCO or AMARETTO',
+    category: 'classic',
+    price: 65,
+    desc: `You prefer powerful yet refreshing drink or you’re total sweet-tooth and you seek for sweet sensations – choose one of theese powerful frothy pleasures.`,
   },
 ];

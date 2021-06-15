@@ -1,8 +1,8 @@
 import { cocktails } from './menu/cocktails.js';
 import { food } from './menu/food.js';
-import { otherDrinks } from './menu/otherDrinks.js';
+import { wines } from './menu/wines.js';
 
-const menu = [...cocktails, ...food, ...otherDrinks];
+const menu = [...cocktails, ...food, ...wines];
 
 const sectionCenter = document.querySelector('.menu-items');
 const filterBtns = document.querySelectorAll('.filter-btn');
@@ -27,15 +27,37 @@ filterBtns.forEach(function (btn) {
 
 function displayMenuItems(menuItems) {
   let displayMenu = menuItems.map(function (item) {
+    let location = `${item.location ? item.location : ''}`;
+    let year = `${item.year ? item.year : ''}`;
     return `
     <div class="item-info">
     <div class="item-header">
       <h3 class="text-uppercase">${item.title}</h3>
       <h4 class="price">${item.price} kn</h4>
     </div>
-    <p class="item-text">
-    ${item.desc}
-    </p>
+    ${
+      item.location && item.year
+        ? `
+        <div class="menu-info">
+    <p class="text-info">Year: ${year}</p>
+    <p class="text-info">${location}</p>
+    </div>`
+        : ''
+    }
+    ${
+      item.location && !item.year
+        ? `
+        <div class="menu-info">
+        <p class="text-info">${location}</p>
+    </div>`
+        : ''
+    }
+    ${
+      item.desc
+        ? `
+        <p class="item-text">${item.desc}</p>`
+        : ''
+    }
   </div>
   `;
   });
@@ -149,3 +171,7 @@ allSections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add('section--hidden');
 });
+
+// Reserve from current day onwards
+const date = document.querySelector('#date');
+date.min = new Date().toISOString().split('T')[0];
