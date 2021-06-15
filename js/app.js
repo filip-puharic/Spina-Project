@@ -68,7 +68,7 @@ function displayMenuItems(menuItems) {
 // Navbar disappear after first scrolling
 $(window).scroll(function (e) {
   // add/remove class to navbar when scrolling to hide/show
-  var scroll = $(window).scrollTop();
+  let scroll = $(window).scrollTop();
   if (scroll >= 150) {
     $('.navbar').addClass('navbar-hide');
   } else {
@@ -173,6 +173,10 @@ allSections.forEach(function (section) {
 });
 
 // Reserve from current day onwards
-let dateControl = document.querySelector('input[type="datetime-local"]');
-dateControl.value = new Date().toISOString().split('.')[0];
-dateControl.min = new Date().toISOString().split('.')[0];
+$(document).ready(function () {
+  let elem = document.getElementById('date');
+  let iso = new Date().toISOString().split('.')[0] + 'Z';
+  let minDate = iso.substring(0, iso.length - 1);
+  elem.value = minDate;
+  elem.min = minDate;
+});
