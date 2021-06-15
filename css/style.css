@@ -532,7 +532,7 @@ h4 {
 }
 .form-control,
 .form-control:focus,
-.form-group input[type='date']:valid {
+.form-group input[type='datetime-local']:focus {
   color: #151515;
 }
 .form-group input,
@@ -548,7 +548,7 @@ h4 {
   border: 2px solid #151515;
 }
 .form-group textarea::placeholder,
-.form-group input[type='date'] {
+.form-group input[type='datetime-local'] {
   color: #777777;
 }
 input:focus ~ .floating-label,

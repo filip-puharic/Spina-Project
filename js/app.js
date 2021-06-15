@@ -173,5 +173,6 @@ allSections.forEach(function (section) {
 });
 
 // Reserve from current day onwards
-const date = document.querySelector('#date');
-date.min = new Date().toISOString().split('T')[0];
+let dateControl = document.querySelector('input[type="datetime-local"]');
+dateControl.value = new Date().toISOString().split('.')[0];
+dateControl.min = new Date().toISOString().split('.')[0];
