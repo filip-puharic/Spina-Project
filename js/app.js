@@ -176,7 +176,8 @@ allSections.forEach(function (section) {
 const date = document.querySelector('#date');
 date.min = new Date().toISOString().split('T')[0];
 // Set current date as default value
-date.valueAsDate = new Date();
+/* This gets the current datetime in milliseconds (since epoch) and applies the timezone offset in milliseconds (minutes * 60k minutes per millisecond). */
+date.valueAsNumber = Date.now() - new Date().getTimezoneOffset() * 60000;
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
