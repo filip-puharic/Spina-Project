@@ -173,10 +173,34 @@ allSections.forEach(function (section) {
 });
 
 // Reserve from current day onwards
-$(document).ready(function () {
-  let elem = document.getElementById('date');
-  let iso = new Date().toISOString().split('.')[0] + 'Z';
-  let minDate = iso.substring(0, iso.length - 1);
-  elem.value = minDate;
-  elem.min = minDate;
-});
+const date = document.querySelector('#date');
+date.min = new Date().toISOString().split('T')[0];
+// Set current date as default value
+date.valueAsDate = new Date();
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict';
+  window.addEventListener(
+    'load',
+    function () {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener(
+          'submit',
+          function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          },
+          false
+        );
+      });
+    },
+    false
+  );
+})();

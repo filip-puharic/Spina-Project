@@ -523,13 +523,6 @@ h4 {
 .form-group:first-child {
   margin-top: 2rem;
 }
-.floating-label {
-  position: absolute;
-  pointer-events: none;
-  top: 9px;
-  left: 12px;
-  transition: all 0.3s ease-in-out;
-}
 .form-control,
 .form-control:focus,
 .form-group input[type='datetime-local']:focus {
@@ -550,14 +543,6 @@ h4 {
 .form-group textarea::placeholder,
 .form-group input[type='datetime-local'] {
   color: #777777;
-}
-input:focus ~ .floating-label,
-input:not(:focus):valid ~ .floating-label {
-  top: -15px;
-  bottom: 0px;
-  left: 0px;
-  color: #f5a637;
-  font-size: 0.8rem;
 }
 .form-group input:focus,
 .form-group textarea:focus {
