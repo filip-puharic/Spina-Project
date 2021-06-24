@@ -33,7 +33,7 @@ function displayMenuItems(menuItems) {
     <div class="item-info">
     <div class="item-header">
       <h3 class="text-uppercase">${item.title}</h3>
-      <h4 class="price">${item.price} kn</h4>
+      ${/*<h4 class="price">${item.price} kn</h4>*/ ''}
     </div>
     ${
       item.location && item.year
