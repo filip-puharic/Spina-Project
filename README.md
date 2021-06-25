@@ -1,24 +1,13 @@
 # [Špina-Bar](https://spina-bar.netlify.app/)
 
-Špina Bar is my first project with purpose. It is a fully responsive, single page designed website for the most popular cocktail bar in Makarska, Croatia.
+Špina Bar is a responsive single-page website for the most popular cocktail bar in Makarska, Croatia. It is developed to simplify the process of table reservation leaving the traditional way of calling the owner and losing valuable time on the thing which should be simple in 21st century.
 
-It contains most important informations with lots of interesting facts about bar which could attract potential guests.
+It contains the most important information that can attract potential guests with lots of interesting facts and photos about the place. Furthermore, the page also contains a menu, so guests can know what the bar has at its current disposal. The most important part is the contact section that contains the simple form with validation which guests can fill to send reservation on which the manager responds to confirm it. Map is positioned at the bottom of the page with the detailed information about the bar location.
 
-Furthermore, the site also contains a menu, so guests can know what the bar has at its disposal.
-
-It is adapted to work on all devices (mobile phones, tablets, computers ...) and is therefore available to everyone anytime and anywhere.
-
-The contact section contains the most important informations which includes the reservation number, e-mail, opening hours, address and
-links to social networks.
-
-On the other hand, there is a form if the guest has an inquiry so that the bar is always available, which has a positive effect on the interaction between the guests and the bar itself.
-
-At the bottom there is a map with the google location of Špina and in the footer there is a recognition from the tripadvisor where guests can see that it is a professional bar with lots of positive reviews.
-
-Also, a QR code has been created which, when scanned, takes the guest to the menu section, which excludes the use of traditional menus with which many guests interact, and thus leads to reducing the chances of coronavirus infection.
-
+Also, a QR code was created that redirects the guests to the menu section when scanning, which eliminates the use of traditional menus with which many guests interact, and thus reduces the possibility of corona virus infection. It is adapted to work on all devices and is therefore available to everyone anywhere anytime.
 
 ## Built With
+
 - HTML5
 - CSS3
 - JavaScript
