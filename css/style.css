@@ -11,7 +11,6 @@ body {
   overflow-x: hidden;
 }
 section {
-  padding: 6rem 0;
   transition: transform 1s, opacity 1s;
 }
 section p {
@@ -338,7 +337,8 @@ section#about {
 /* End of about section */
 
 /* Menu section */
-#menu {
+section#menu {
+  padding: 6rem 0;
   background: #f0f0f0;
 }
 .menu-heading {
@@ -419,6 +419,9 @@ h4 {
 /* End of menu section */
 
 /* Gallery section */
+section#gallery {
+  padding: 6rem 0;
+}
 #gallery img {
   transition: transform 0.5s ease-in-out;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
@@ -438,9 +441,9 @@ h4 {
 /* End of gallery section */
 
 /* Contact us section */
-#contact {
+section#contact {
+  padding: 6rem 0;
   background: #f0f0f0;
-  padding-bottom: 0;
 }
 .info {
   background: #fff;
@@ -846,6 +849,10 @@ footer .copyright::before {
   .dropdown-item {
     font-size: 0.6rem;
   }
+  .info span {
+    font-size: 0.65rem;
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 376px) {
@@ -903,10 +910,6 @@ footer .copyright::before {
   .info i {
     margin: 1rem 0.5rem;
     font-size: 1.2rem;
-  }
-  .info span {
-    font-size: 0.65rem;
-    margin-left: 0;
   }
   .social-media i {
     font-size: 2rem;
