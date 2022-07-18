@@ -849,7 +849,7 @@ footer .copyright::before {
   .dropdown-item {
     font-size: 0.6rem;
   }
-  .info i {
+  .info .fas {
     margin: 0.5rem 0;
     font-size: 1.2rem;
   }
