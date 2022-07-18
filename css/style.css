@@ -376,16 +376,13 @@ h4 {
   grid-gap: 3rem;
 }
 .item-info .item-header {
-  border-bottom: 0.2rem dotted #dc3545;
+  border-bottom: 0.2rem solid #dc3545;
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
 }
 .price {
   color: #f5a637;
-}
-.menu-info {
-  border-bottom: 0.2rem dotted #dc3545;
 }
 .menu-info p {
   font-size: 1rem;
@@ -470,7 +467,6 @@ h4 {
   font-size: inherit;
   font-family: inherit;
   color: inherit;
-  opacity: inherit;
   margin: 0.5rem 0 0 2.4rem;
 }
 .info i {
@@ -557,6 +553,7 @@ h4 {
 }
 .form-group .btn {
   padding: 0.6rem 1rem;
+  width: 100%;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover,

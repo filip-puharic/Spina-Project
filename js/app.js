@@ -27,40 +27,51 @@ filterBtns.forEach(function (btn) {
 
 function displayMenuItems(menuItems) {
   let displayMenu = menuItems.map(function (item) {
-    let location = `${item.location ? item.location : ''}`;
-    let year = `${item.year ? item.year : ''}`;
-    return `
-    <div class="item-info">
-    <div class="item-header">
-      <h3 class="text-uppercase">${item.title}</h3>
-      ${/*<h4 class="price">${item.price} kn</h4>*/ ''}
-    </div>
-    ${
-      item.location && item.year
-        ? `
-        <div class="menu-info">
-    <p class="text-info">Year: ${year}</p>
-    <p class="text-info">${location}</p>
-    </div>`
-        : ''
+    let location = `${item.location ? item.location : ''}`,
+      year = `${item.year ? item.year : ''}`,
+      winemaker = `${item.winemaker ? item.winemaker : ''}`,
+      category = item.category;
+
+    if (category === 'red' || category === 'white' || category === 'rose') {
+      return `
+     <div class="item-info">
+     <div class="item-header">
+       <h3 class="text-uppercase">${item.title}</h3>
+       <h4 class='price'>${item.price} kn</h4>
+     </div>
+     <p class="item-text">${item.desc}</p>
+      <div class="menu-info">
+        <p class="text-info">Winery: ${winemaker}</p>
+        <p class="text-info">Region: ${location}</p>
+        <p class="text-info">Year: ${year}</p>
+     </div>
+         
+   </div>`;
+    } else if (category === 'sparkling') {
+      return `
+     <div class="item-info">
+     <div class="item-header">
+       <h3 class="text-uppercase">${item.title}</h3>
+       <h4 class='price'>${item.price} kn</h4>
+     </div>
+     <p class="item-text">${item.desc}</p>
+      <div class="menu-info">
+        <p class="text-info">Producer: ${winemaker}</p>
+        <p class="text-info">Region: ${location}</p>
+     </div>
+   </div>`;
+    } else {
+      return `
+      <div class="item-info">
+      <div class="item-header">
+        <h3 class="text-uppercase">${item.title}</h3>
+        <h4 class='price'>${item.price} kn</h4>
+      </div>
+      <p class="item-text">${item.desc}</p>
+    </div>`;
     }
-    ${
-      item.location && !item.year
-        ? `
-        <div class="menu-info">
-        <p class="text-info">${location}</p>
-    </div>`
-        : ''
-    }
-    ${
-      item.desc
-        ? `
-        <p class="item-text">${item.desc}</p>`
-        : ''
-    }
-  </div>
-  `;
   });
+
   displayMenu = displayMenu.join('');
   sectionCenter.innerHTML = displayMenu;
 }
@@ -80,6 +91,7 @@ $(window).scroll(function (e) {
 document
   .querySelector('.jsYear')
   .appendChild(document.createTextNode(new Date().getFullYear()));
+
 // Fancybox settings
 $('[data-fancybox="images"]').fancybox({
   loop: true,
