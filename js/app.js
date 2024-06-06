@@ -37,7 +37,7 @@ function displayMenuItems(menuItems) {
      <div class="item-info">
      <div class="item-header">
        <h3 class="text-uppercase">${item.title}</h3>
-       <h4 class='price'>${item.price} kn</h4>
+       <h4 class='price'>${item.price} €</h4>
      </div>
      <p class="item-text">${item.desc}</p>
       <div class="menu-info">
@@ -52,7 +52,7 @@ function displayMenuItems(menuItems) {
      <div class="item-info">
      <div class="item-header">
        <h3 class="text-uppercase">${item.title}</h3>
-       <h4 class='price'>${item.price} kn</h4>
+       <h4 class='price'>${item.price} €</h4>
      </div>
      <p class="item-text">${item.desc}</p>
       <div class="menu-info">
@@ -65,7 +65,7 @@ function displayMenuItems(menuItems) {
       <div class="item-info">
       <div class="item-header">
         <h3 class="text-uppercase">${item.title}</h3>
-        <h4 class='price'>${item.price} kn</h4>
+        <h4 class='price'>${item.price} €</h4>
       </div>
       <p class="item-text">${item.desc}</p>
     </div>`;
