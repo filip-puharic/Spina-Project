@@ -6,21 +6,21 @@ export const food = [
     id: 1,
     title: 'CHICKEN LIVER PATÉ',
     category: 'bar-food',
-    price: 5.50,
+    price: 5.5,
     desc: `With cognac, cinnamon, pistacchios and toasted bread.`,
   },
   {
     id: 2,
     title: 'BLACK OLIVE TAPENADE',
     category: 'bar-food',
-    price: 5.50,
+    price: 5.5,
     desc: `Black olive spread with spices, anchovies and home-made bread.`,
   },
   {
     id: 3,
     title: 'ANCHOVIE PLATE',
     category: 'bar-food',
-    price: 7.50
+    price: 7.5,
     desc: `Salted or marinated, served on rocket with cappers and home-made bread.`,
   },
   {
@@ -63,13 +63,13 @@ export const food = [
     title: 'FISH PLATTER',
     price: 16,
     desc: `A sekection of fish and a variety of sea food.`,
-    },
-    {
-      id: 10,
-      title: 'TUNA BURGER',
-      price: 10,
-      desc: `Two tasty tuna mini-burgers in home made buns.`,
-      }, 
+  },
+  {
+    id: 10,
+    title: 'TUNA BURGER',
+    price: 10,
+    desc: `Two tasty tuna mini-burgers in home made buns.`,
+  },
   ////////////////////////////////
   /////        SNACKS        /////
   ////////////////////////////////
@@ -91,7 +91,7 @@ export const food = [
     id: 13,
     title: 'Home-made bread',
     category: 'snacks',
-    price: 3.50,
+    price: 3.5,
     desc: `Extra portion.`,
   },
   ////////////////////////////////
